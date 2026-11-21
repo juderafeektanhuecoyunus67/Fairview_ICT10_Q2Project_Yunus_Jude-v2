@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Members</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- PyScript Core CSS and JavaScript CDN Resources -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="club-body">
+
+    <!-- Header / Navigation (Unchanged) -->
+    <header class="navbar-custom">
+        <div style="display: flex;">
+            <a href="homepage.html" class="nav-box">Homepage</a>
+            <a href="elementchecker.html" class="nav-box">Element Checker</a>
+            <a href="schoolclubmembers.html" class="nav-box">School Club Members</a>
+            <a href="meetthecreator.html" class="nav-box">Meet The Creator</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="club-wrapper">
+        <div class="club-outer-card">
+            <h1 class="club-title">
+                <span class="txt-red">ADD</span>
+                <span class="txt-orange">NEW</span>
+                <span class="txt-yellow">CLUB</span>
+                <span class="txt-bright-green">MEMBER:</span>
+            </h1>
+
+            <div class="club-inner-card">
+                <label for="club_first_name" class="club-input-label">First name:</label>
+                <input type="text" id="club_first_name" class="club-text-input" placeholder="Enter here">
+
+                <label for="club_last_name" class="club-input-label">Last name:</label>
+                <input type="text" id="club_last_name" class="club-text-input" placeholder="Enter here">
+
+                <button type="button" class="club-submit-btn" py-click="add_club_member">Submit</button>
+            </div>
+
+            <!-- Green Output Box Below Inner Card -->
+            <div id="club-output"></div>
+        </div>
+    </main>
+
+    <!-- Bottom Footer Bar (Unchanged) -->
+    <footer class="footer-bar">
+        GRADE 10-SAPPHIRE | JUDE T. YUNUS | ICT Q2 PROJECT ©2026
+    </footer>
+
+    <!-- PyScript Python Script Binding -->
+    <script type="py" src="main.py"></script>
+</body>
+</html>

@@ -1,0 +1,494 @@
+/* ==========================================================================
+   PROJECT STYLESHEET — STUDENT SHOWCASE 2026
+   Pages:
+     0. Header & Footer (Shared across all 4 pages)
+     1. homepage.html (Seatwork 1)
+     2. elementchecker.html (Skills Test)
+     3. schoolclubmembers.html (Drill 2)
+     4. meetthecreator.html (Project)
+   ========================================================================== */
+
+
+/* ==========================================================================
+   0. HEADER & FOOTER STYLING
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Navigation --- */
+.navbar-custom {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid #1c1111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-box {
+    border-right: 1px solid #c8c4c4;
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-box:hover {
+    color: #ffffff;
+    background-color: #1a1a1a;
+}
+
+/* --- Footer --- */
+.footer-bar {
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #aaa;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+
+/* ==========================================================================
+   1. HOMEPAGE.HTML (Seatwork 1)
+   ========================================================================== */
+body.homepage-body {
+    background-color: #0a0f1d;
+    background-image: linear-gradient(rgba(10, 20, 50, 0.75), rgba(10, 20, 50, 0.75)),
+                      url("redbuller.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Top Result Banner */
+#output1 {
+    width: 100%;
+    min-height: 38px;
+    background-color: #00ff00;
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 20px;
+    box-shadow: 0 2px 10px rgba(0, 255, 0, 0.3);
+}
+
+.main-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Outer Dark Blue Container */
+.outer-card {
+    background-color: #121824;
+    border: 1px solid #1e293b;
+    border-radius: 18px;
+    padding: 40px 30px;
+    width: 440px;
+    max-width: 90vw;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.title-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+    letter-spacing: 1px;
+}
+
+.txt-white { color: #ffffff; }
+.txt-green { color: #20c997; }
+.txt-red   { color: #ff3344; }
+
+.subtitle-text {
+    color: #cccccc;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+/* Inner Grey Form Area */
+.inner-card {
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: left;
+}
+
+.input-label {
+    display: block;
+    color: #ffffff;
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.text-input {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #000000;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    color: #cccccc;
+    font-size: 13px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.text-input::placeholder {
+    color: #777777;
+}
+
+/* Bright Blue Submit Button */
+.continue-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0033ff;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.continue-button:hover {
+    background-color: #0022cc;
+}
+
+
+/* ==========================================================================
+   2. ELEMENTCHECKER.HTML (Skills Test)
+   ========================================================================== */
+body.element-body {
+    background-color: #12151c;
+    background-image: url("redbuller.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.element-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.element-outer-card {
+    background-color: rgba(11, 12, 16, 0.95);
+    width: 520px;
+    max-width: 90vw;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.element-outer-card h1 {
+    font-size: 24px;
+    margin: 0 0 4px 0;
+    font-weight: bold;
+}
+
+.element-subtitle {
+    font-size: 11px;
+    color: #aaaaaa;
+    margin: 0 0 20px 0;
+}
+
+.element-instructions {
+    font-size: 11px;
+    color: #dddddd;
+    text-align: left;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.element-inner-card {
+    background-color: #2e2e2e;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: left;
+}
+
+.element-input-label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.element-text-input {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #333333;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+.element-btn {
+    width: 100%;
+    background-color: #0022ff;
+    color: #ffffff;
+    border: 1px solid #0011bb;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.element-btn:hover {
+    background-color: #0011dd;
+}
+
+.element-result-label {
+    font-size: 13px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+#element-output {
+    background-color: #00ff22;
+    color: #000000;
+    padding: 16px;
+    width: 60%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 80px;
+}
+
+#element-output * {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   3. SCHOOLCLUBMEMBERS.HTML (Drill 2)
+   ========================================================================== */
+   
+body.club-body {
+    background-color: #070e21;
+    background-image: linear-gradient(rgba(10, 20, 50, 0.75), rgba(10, 20, 50, 0.75)),
+                      url("redbuller.png")
+}
+
+.club-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.club-outer-card {
+    background-color: #121824;
+    border: 1px solid #1e293b;
+    border-radius: 18px;
+    padding: 35px 28px;
+    width: 450px;
+    max-width: 90vw;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.club-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 22px 0;
+    letter-spacing: 1px;
+}
+
+.txt-orange       { color: #ff8800; }
+.txt-yellow       { color: #ffd700; }
+.txt-bright-green { color: #00ff00; }
+
+.club-inner-card {
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 22px 20px;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.club-input-label {
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.club-text-input {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #000000;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    color: #cccccc;
+    font-size: 13px;
+    margin-bottom: 18px;
+    outline: none;
+}
+
+.club-text-input::placeholder {
+    color: #777777;
+}
+
+.club-submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0033ff;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.club-submit-btn:hover {
+    background-color: #0022cc;
+}
+
+#club-output {
+    width: 100%;
+    min-height: 42px;
+    background-color: #00ff00;
+    color: #000000;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 14px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#club-output * {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   4. MEETTHECREATOR.HTML (Project)
+   ========================================================================== */
+body.creator-body {
+    background-color: #070e21;
+    background-image: linear-gradient(rgba(10, 20, 50, 0.75), rgba(10, 20, 50, 0.75)),
+                      url("oarsbluu.png")
+}
+
+.creator-avatar {
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    background-color: #111827;
+    background-image: url("meetthecreatoricon.jpg"); /* Replace with your exact image filename */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid #7e3ff2;
+}
+
+.creator-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.creator-outer-frame {
+    background-color: #000000;
+    border: 2px solid #7e3ff2;
+    padding: 6px;
+    width: 720px;
+    max-width: 92vw;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+}
+
+.creator-inner-card {
+    background-color: #2a2a2a;
+    border-radius: 22px;
+    padding: 30px 45px 40px 45px;
+    text-align: center;
+}
+
+.creator-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 22px 0;
+}
+
+.creator-avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+.creator-avatar {
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #111827;
+}
+
+#creator-profile {
+    text-align: left;
+    color: #e5e5e5;
+}
+
+.creator-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin: 0 0 18px 0;
+}
+
+.creator-detail {
+    font-size: 13px;
+    line-height: 1.65;
+    margin: 0 0 14px 0;
+    color: #dddddd;
+}
+
+.creator-detail strong {
+    color: #ffffff;
+}
